@@ -13,7 +13,7 @@ body{
 }
 
 #canvas{
-    width:400px;
+    width:90%;
     height:200px;
     border:1px solid #000;
     background-color: white;
@@ -30,9 +30,10 @@ body{
   
   /* MISE EN PAGE*/
   
-  .bloc-mise-en-page{margin:10px;
+  .bloc-mise-en-page{
+    margin:10px;
     flex:1 0 0px;   
-    min-width:500px;
+    width:100%;
   }
 
   .info{
