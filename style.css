@@ -5,6 +5,7 @@
 body{
   background-color: #0c0e11;
 }
+
 .main{
   padding: 5%;
   margin-top: 0;
@@ -219,3 +220,9 @@ img{
   transform: translateY(-30%);
 }
 
+@media screen and (max-width: 750px){
+  
+  #title{
+    font-size: 20px;
+  }
+}
