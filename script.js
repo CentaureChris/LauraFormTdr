@@ -96,7 +96,10 @@ function moveDrawligne(oEvent){
     initCanvas();
     document.getElementById("bt-clear").addEventListener("click", nettoyer); 
   });
-  
+   
+  function imprimer_page(){
+    window.print();
+  }
   
 
 

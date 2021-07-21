@@ -1,112 +1,129 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- CSS only -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
-    <link rel="stylesheet" href="style.css">
-    <title>Décharge TDR</title>
-    <script src="script.js"></script>
-    <script src="https://kit.fontawesome.com/a076d05399.js" ></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- CSS only -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css">
+  <title>Décharge TDR</title>
+  <script src="script.js"></script>
+  <script src="https://kit.fontawesome.com/a076d05399.js"></script>
 
 </head>
-<body>
-    <div id="menuArea">
-        <input type="checkbox" id="menuToggle"></input>
-      
-      <label for="menuToggle" class="menuOpen">
-        <div class="open"></div>
-      </label>
-      
-      <div class="menu menuEffects">
-        <label for="menuToggle"></label>
-        <div class="menuContent">
-          <ul>
-            <li><a href="https://centaurechris.github.io/LauraFormSourcils/">Sourcils</a></li>
-            <li><a href="https://centaurechris.github.io/LauraFormTdr/">Taches de rousseur</a></li>
-            
-          </ul>
-        </div>
-      </div>
-      </div>
-    <div class="text-center ">
-      <h1 style="color:white;" id="title">Formulaire Taches de rousseur</h1>
-      <img src="./images/laura logo 2.png" alt="logo_bbm">
-    </div>
-    <div class="main">
-        <h5>Informations éclairées sur le maquillage permanent</h5>
-        <p>
-            Bonjour,<br>
-            Vous êtes sur le point de réaliser un maquillage permanent des tâches de rousseurs.<br> Ce document a pour but de vous informer sur les conseils d'entretien liés à cette pigmentation mais aussi d'avoir conscience du caractère permanent de l'acte.
-            <br>
-            Les tâches de rousseurs tiennent entre 1 an et 3 ans selon le types de peau et l'entretien.
-            <br>
-            En signant ce document, vous confirmez ne pas suivre de traitements médicaux , ne pas avoir de maladie tel que du psoriasis, eczéma et ne pas suivre un traitement de chimiothérapie.
-            <br>
-            Pour une bonne évolution de la prestation nous vous recommandons :
-        </p>
-        <ul class="info">
-            <li>d'eviter le sauna , gommage, hammam ,piscine et soleil pendant 10 jours</li>
-            <li>d'eviter le maquillage pendant 3 jours sur la zone pigmentée.</li>
-            <li>d'appliquer une crème cicatrisante type cicaplast en <b>COUCHE FINE </b>pendant 1 semaine. </li>
-        </ul>
-        <h5>Concernant l'évolution de la prestation :</h5>
-        <p>Vos tâches de rousseurs ne seront pas visible après la prestation , elles apparaîtront au bout de quelques heures.
-          Vos tâches peuvent être trop foncées les jours suivant la pigmentation.
-          Une pellicule de cicatrisation va se former , il est indispensable de ne pas y toucher.
-          Le résultat définitif apparaîtra au bout d'environ 12 jours.
-          Les retouches ne sont pas nécessaires , elles sont à réaliser uniquement si vous souhaitez en rajouter, la retouche est facturé comme suit :</p>
-          <ul>
-            <li>Retouche supplémentaire ( dans les 2 mois après la première prestation et valable une seule fois ) 40€ </li>
-            <li>Retouche annuelle : 65€ </li>
-          </ul>
 
-          <p>Il n'est pas possible de réaliser les retouches avant un délai de minimum 3 semaines , celui ci correspond à la cicatrisation complète de votre pigmentation.</p>
-        
-        <h5>  <input type="checkbox" name="confirmation" class="confirmation"> Je confirme avoir été informée des bénéfices attendus, des risques inhérents à l’acte de maquillage permanent, des alternatives éventuelles à cette technique et du caractère permanent de l’acte, me permettront de prendre ma décision.
-        </h5>
-        <br>
-        <form class="form-control p-3">
-           <h1 class="text-center mb-4"><u><em>Formulaire</em></u></h1>
-            <label for="nom" class="form-label">NOM:</label>
-            <input type="text" class="form-label me-5">
-            <label for="prenom" >PRENOM:</label>
-            <input type="text"><br>
-            Intensité souhaité:
-            <input type="checkbox" name="naturelle" id="naturelle" class="m-1"><label>Naturelle</label>
-            <input type="checkbox" name="soutenue" id="soutenue" class="m-1"><label>Soutenue</label>
-            <input type="checkbox" name="tresSoutenue" id="tresSoutenue" class="m-1"><label>Très soutenue</label><br><br>
-            <h5><u>Traitement médical:</u></h5>
-            <input type="radio" name="med" id="traitMedOui" class="m-1"><label>Oui</label>
-            <input type="radio" name="med" id="traitMedNon" class="m-1"><label>Non</label>
-            <br>
-            <textarea id="story" name="story"
-            rows="5" cols="33" placeholder="Si oui lesquelles..."></textarea><br>
-            <h5><u>Allergies:</u></h5>
-            <input type="radio" name="all" id="allOui" class="m-1"><label>Oui</label>
-            <input type="radio" name="all" id="allNon" class="m-1"><label>Non</label>
-            <br>
-            <textarea id="story" name="story"
-            rows="5" cols="33" placeholder="Si oui lesquelles..."></textarea>
-            <br><br>
-            <input type="checkbox" name="confirmation" classe="confirmation"> Je reconnais avoir pris connaissance de l’ensemble du présent document d’information et avoir reçu toutes les informations liées à la prestation réalisée ce jour. Je reconnais avoir posé toutes  les questions relatives à cette prestation.<br/>
-     J’ai bien compris qu’il existe un caractère aléatoire concernant la tenue, l’intensité, la cicatrisation et le résultat du fait de l’imprévisibilité des réactions individuelles.
-    
-        </form><br>
-        <h4>Signer ci-dessous:</h4>
-        <label>Fait à:</label><input type="text" name="lieu" id="lieu" class="ms-2 me-2"> le <input type="date" name="date" id="date">
-<div class="mise-en-page">
-  <div class="bloc-mise-en-page">
-    <canvas id="canvas"></canvas><br>
-    <button class="btn btn-secondary m-2"><span id="bt-clear">Effacer</span></button>
+<body>
+  <div id="menuArea">
+    <input type="checkbox" id="menuToggle"></input>
+
+    <label for="menuToggle" class="menuOpen">
+      <div class="open"></div>
+    </label>
+
+    <div class="menu menuEffects">
+      <label for="menuToggle"></label>
+      <div class="menuContent">
+        <ul>
+          <li><a href="https://centaurechris.github.io/LauraFormSourcils/">Sourcils</a></li>
+          <li><a href="https://centaurechris.github.io/LauraFormTdr/">Taches de rousseur</a></li>
+
+        </ul>
+      </div>
+    </div>
   </div>
-  <!-- <div class="bloc-mise-en-page">
+  <div class="text-center ">
+    <h1 style="color:white;" id="title">Formulaire Taches de rousseur</h1>
+    <img src="./images/laura logo 2.png" alt="logo_bbm">
+  </div>
+  <div class="main">
+    <h5>Informations éclairées sur le maquillage permanent</h5>
+    <p>
+      Bonjour,<br>
+      Vous êtes sur le point de réaliser un maquillage permanent des tâches de rousseurs. <br> Ce document a pour but de
+      vous informer sur les conseils d'entretien liés à cette pigmentation mais aussi d'avoir conscience du caractère
+      permanent de l'acte.
+      <br>
+      Les tâches de rousseurs tiennent entre 1 an et 3 ans selon le types de peau et l'entretien.
+      <br>
+      En signant ce document, vous confirmez ne pas suivre de traitements médicaux , ne pas avoir de maladie tel que du
+      psoriasis, eczéma et ne pas suivre un traitement de chimiothérapie.
+      <br>
+      Pour une bonne évolution de la prestation nous vous recommandons :
+    </p>
+    <ul class="info">
+      <li>d'eviter le sauna , gommage, hammam ,piscine et soleil pendant 10 jours</li>
+      <li>d'eviter le maquillage pendant 3 jours sur la zone pigmentée.</li>
+      <li>d'appliquer une crème cicatrisante type cicaplast en <b>COUCHE FINE </b>pendant 1 semaine. </li>
+    </ul>
+    <h5>Concernant l'évolution de la prestation :</h5>
+    <p>Vos tâches de rousseurs ne seront pas visible après la prestation , elles apparaîtront au bout de quelques
+      heures.
+      Vos tâches peuvent être trop foncées les jours suivant la pigmentation.
+      Une pellicule de cicatrisation va se former , il est indispensable de ne pas y toucher.
+      Le résultat définitif apparaîtra au bout d'environ 12 jours.
+      Les retouches ne sont pas nécessaires , elles sont à réaliser uniquement si vous souhaitez en rajouter, la
+      retouche est facturé comme suit :</p>
+    <ul>
+      <li>Retouche supplémentaire ( dans les 2 mois après la première prestation et valable une seule fois ) 40€ </li>
+      <li>Retouche annuelle : 65€ </li>
+    </ul>
+
+    <p>Il n'est pas possible de réaliser les retouches avant un délai de minimum 3 semaines , celui ci correspond à la
+      cicatrisation complète de votre pigmentation.</p>
+
+    <h5> <input type="checkbox" name="confirmation" class="confirmation"> Je confirme avoir été informée des bénéfices
+      attendus, des risques inhérents à l’acte de maquillage permanent, des alternatives éventuelles à cette technique
+      et du caractère permanent de l’acte, me permettront de prendre ma décision.
+    </h5>
+    <br>
+    <form class="form-control p-3">
+      <h1 class="text-center mb-4"><u><em>Formulaire</em></u></h1>
+      <label for="nom" class="form-label">NOM:</label>
+      <input type="text" class="form-label me-5">
+      <label for="prenom">PRENOM:</label>
+      <input type="text"><br>
+      Intensité souhaité:
+      <input type="checkbox" name="naturelle" id="naturelle" class="m-1"><label>Naturelle</label>
+      <input type="checkbox" name="soutenue" id="soutenue" class="m-1"><label>Soutenue</label>
+      <input type="checkbox" name="tresSoutenue" id="tresSoutenue" class="m-1"><label>Très soutenue</label><br><br>
+      <h5><u>Traitement médical:</u></h5>
+      <input type="radio" name="med" id="traitMedOui" class="m-1"><label>Oui</label>
+      <input type="radio" name="med" id="traitMedNon" class="m-1"><label>Non</label>
+      <br>
+      <textarea id="story" name="story" rows="5" cols="33" placeholder="Si oui lesquelles..."></textarea><br>
+      <h5><u>Allergies:</u></h5>
+      <input type="radio" name="all" id="allOui" class="m-1"><label>Oui</label>
+      <input type="radio" name="all" id="allNon" class="m-1"><label>Non</label>
+      <br>
+      <textarea id="story" name="story" rows="5" cols="33" placeholder="Si oui lesquelles..."></textarea>
+      <br><br>
+      <input type="checkbox" name="confirmation" classe="confirmation"> Je reconnais avoir pris connaissance de
+      l’ensemble du présent document d’information et avoir reçu toutes les informations liées à la prestation réalisée
+      ce jour. Je reconnais avoir posé toutes les questions relatives à cette prestation.<br />
+      J’ai bien compris qu’il existe un caractère aléatoire concernant la tenue, l’intensité, la cicatrisation et le
+      résultat du fait de l’imprévisibilité des réactions individuelles.
+
+    </form><br>
+    <h4>Signer ci-dessous:</h4>
+    <label>Fait à:</label><input type="text" name="lieu" id="lieu" class="ms-2 me-2"> le <input type="date" name="date"
+      id="date">
+    <div class="mise-en-page">
+      <div class="bloc-mise-en-page">
+        <canvas id="canvas"></canvas><br>
+        <button class="btn btn-secondary m-2"><span id="bt-clear">Effacer</span></button>
+      </div>
+      <!-- <div class="bloc-mise-en-page">
     <h4>Capture de la signature</h4>
     <div id="capture"></div> 
   </div> -->
-</div> 
     </div>
+    <div>
+      <input id="impression" name="impression" type="button" onclick="imprimer_page()" value="Imprimer cette page" />
+    </div>
+  </div>
 
 </body>
+
 </html>
